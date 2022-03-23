@@ -1,1 +1,8 @@
 hello git this i smy first project
+
+cloning 
+create files and folder
+staging   //git  add .
+ status   // git status
+initial  // git init
+

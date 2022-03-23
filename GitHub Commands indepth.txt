@@ -1,0 +1,182 @@
+// Understanding   Git   | Github
+
+ //  first create github new projects and thing to setup 
+ //  then setup git into local machine and setting up username gmail and credentical set
+   
+   
+  // # then git clone the project into local machine
+  
+ //    git clone is only first time now projects is change don't clone 
+ //   pulling the changes  mean someone change the projects 
+ // so now you need to take update your projects
+ 
+ -->  # git pull origin main     //for pull from github
+ 
+ 
+ i created new file call  "helpme.txt"
+
+
+// now i push to git 
+
+  Staging files
+  
+  //  command is      		# git add filename.extension
+  
+  %%%%%%	OR	%%%%%%%
+  
+  Staging all file   commands is  
+  
+  //   # git add .
+  
+  
+  then check the  "	# git status 	"
+  git status tell you what are the files which is stages 
+  but not yet to commited 
+  
+  //  if you want to unstage the file then 
+  
+ # git restore --stage filename.extension
+  
+  //  now finally all is done to commit the changes 
+  
+  
+  # git commit    press enter  "commment on your work what kind of work is done by you"
+   
+   now you are ready to push the file  on git
+   
+   # git push origin main
+   
+   
+   
+ //  # git log
+ Git log is a utility tool to review and read a history of everything that happens to a repository
+ 
+ // # git diff    (not required staging files )
+ Diff command is used in git to track the difference between the changes made on a file
+ 
+ 				
+  
+  
+  Git commands  
+  
+  git clone	 //Creates a copy of an existing Git repository
+  git add       //Diff command is used in git to track the difference between the changes made on a file
+  git status	//Displays the state of the working directory and the staged snapshot. 
+  git diff	// Difference
+  git commit	//Takes the staged snapshot and commits it to the project history.
+  git log	//Lets you explore the previous revisions of a project.
+  git push	//Pushing is the opposite of fetching (with a few caveats).
+  git pull	//Pulling is the automated version of git fetch.
+  git config    //A convenient way to set configuration options for your Git installation
+  git init 	//Initializes a new Git repository
+  
+  
+  
+  what is ' origin ' ?		also called as shorthand
+  default first name --- Alias name   
+  project name set by you 
+  but default Alias name reference it ....
+  
+  
+  git remote -v
+origin	git@github.com:ankushwairagade/test-first.git (fetch)
+origin	git@github.com:ankushwairagade/test-first.git (push)
+
+origin reference to location
+
+
+@ now the questions arise to how to change the Alias name ?
+
+
+  when we create the project and fetch to the local computer 
+  that time we used 
+  
+  # git clone link.git --origin customname
+  
+  then check # git remote -v
+  
+  
+______________________________________________________________________________________ Cool
+
+	How to set_up git use for multiple people or mega_projects
+		// COllABORATION * 
+#	What is BRANCHES ?    
+
+	-  Projects IDE  (on Github)    2 users   (X,Y)
+	   |
+	   |--> File1.py    // commit1  X
+	   |--> File2.py    // commit2  X
+	   |--> File3.py    // commit3  Y
+
+
+	This is Scenario
+------->   Creating  unnecessary problem update write conflit 
+		now two people same time push | pull and makes change in one files hence 
+		error occurs  
+	
+	
+	
+		Now the soln is		 "  BRANCHES  "
+		
+						 Team 1			 Team 2
+		MAIN				FEATURE (Text)		FEATURE
+		
+		M1 -stable				
+		M2 -stable		   	 M2			  M2
+		M3 -Team_1     	Merge to main<---M3			  M3 // Broke
+									  M4
+		M5-Team_2				       Merge to Main<-----M5
+
+
+
+// After using BRANCHES   MAIN BRANCH has less chance to be broke 
+// this is how the problem has solved
+
+
+ ___@ how to do it in realtime 
+ 
+ $ git branch
+ // to see which branch is selected
+ 
+ $ git checkout -b 'new_branch_name'
+  // new branch is created and also selected  newly created branch
+
+ $ git checkout main|master
+ // swited to back main branch 
+ 
+
+if we create branch... mean it totally different version of the project
+So the ambiguity are solved 
+
+
+Meger Feature and main  
+Open A pull Request   " Compare & pull request "
+
+Then Resolve the conflict and you can see the green button  "Merge Pull Request"
+
+there are three types of commits
+
+ 1.  Create a merge commit    //  full history are showing.. whatever done in feature_one
+ 2.  Squash and merge // squash into one commit and showing one commit done only  feature_two
+ 3.  Rebase and merge	//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
