@@ -6,3 +6,5 @@ staging   //git  add .
  status   // git status
 initial  // git init
 
+
+// kuch bfhuic k
