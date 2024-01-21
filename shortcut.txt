@@ -1,0 +1,39 @@
+
+Windiows Shortcut
+=================================================
+move from one desktop to another => Win+Ctrl+Right 
+minimize current app             => win+down
+to close current app             => alt + f4
+to rename file or folder         => f2
+to direct go to Desktop          => win + D
+for tabs                         => alt + tab
+
+
+
+
+
+========== CHROME Related ============================
+
+open new tab in chrome 		=> ctrl + T
+to close current tab   		=> ctrl + f4
+for duplicate tab     		=> Alt+D followed by Alt+Enter 
+to save bookmark       		=> ctrl + D
+to move back           		=> alt + left arrow
+to search              		=> alt + D
+to move to next tab    		=> ctrl + tab
+Jump to the previous open tab   => ctrl + shift + tab
+
+
+
+
+
+
+============ Excel Shortcut ============================
+
+Row Hight  		=> Alt + H + O + A
+Column    		=> Alt + H + O + I
+To Create Border        => Alt + H + B + A
+To Centralize           => Alt + H + H
+Rename sheet            => Alt + H + O + R
+
+To Select only Data => Ctrl + A then Ctrl + G then click on Special & select Constant and Ok.

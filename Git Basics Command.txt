@@ -1,0 +1,142 @@
+
+ssh key -> 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
+
+
+For all files (including hidden files) in Git Bash
+-> ls -larth
+
+For Initializing the Git Repository for tracking
+-> git init
+
+For know the current status of the Snapshot
+-> git status
+
+For staging the files (trace the changes or track the files (track the changes))
+-> for specific file -> git add name
+-> for all files -> git add .
+
+For taking a snapshot ( it means checkpoint is added and u can revert back to this checkpoint)
+-> git commit -m "My First Commit"
+-> git commit (open editor ther u can type ur commit msg then press i and write ur commit msg then press ctr+x,ctr+c then type :wq and press Enter.
+
+For previos snapshot or codebase
+-> git log
+-> git log -2 (last 2 commit)
+-> git log --author
+-> git log --name-status
+-> git log -p (p for patch) ==> getting info about what are the changes are made in new file and older one. 
+
+
+If You made any changes in local file but it is not staged and want to get back to previoud one then
+-> git checkout -- filename (ex-> app.css) or 
+-> git restore filename
+
+For all Files -> git checkout -- .
+
+
+git checkout used for -> Switch branches or restore working tree file.
+
+
+For unstaging
+-> git restore --staged filename  
+
+If some file is updated and you want to commit it into previod commit then staged it and use ammend or u want update ur previous commit msg
+-> git commit --amend
+
+for knowing what are the changes are made in local file before staging
+-> git diff
+After staged use -> git diff --staged	
+
+
+
+For ignore file to track and just creating file in local not in staged or don't add in commit, compltely ignore them
+-> create file .gitignore and file or folder name in .ignore file and commit the .ignore file
+
+
+
+
+
+Note -> staging & Git commit is maintained by Git and files are maintained by OS. 
+Note -> we are staging the or adding the changes in existing file when we are doing commit not adding entire file.
+
+
+
+
+Branching (Its just pointing to the snapshot not creating copy of branch)
+=================
+
+Note: HEAD point to current branch alltime.(it indicates current branch)
+
+Get all branches
+-> git branch
+
+Create a new branch
+-> git branch branchname
+
+Switch to another branch
+-> git checkout branchname
+
+Create a Branch and Switch to it.
+-> git checkout -b branchname
+
+Merging with another branch (fast-forward if the another branch is ahead of the prev branch)(if one branch is ahead and another is behind and need to go ahead the fasr-forwarding is happend & it is a simplest way of merging)
+
+-> git merge branchname(on which branch to point, previous branch is pointing to modified or updated branch not copying code or file)
+
+
+if some changes in one branch lets say color-exp and u want to gets that changes in master branch. this is called "recursive" strategy.
+-> git merge color-exp (from master branch)
+
+ 
+Note: vi filename ->where u want to check
+
+
+For Delete Branch
+-> git branch -d branchname
+
+For get back to specific checkpoint or commit
+-> git checkout hash (now head pointing to hash commit file but there is no branch link with that HEAD so it is in detached state, and if u move the HEAD we loss that branch we need to create a branch)
+-> git branch branchname(first-commit) and then ->git checkout branchname(first-commit)
+
+
+
+For rebase and fast-forward merge (from another branch), (eg. branchname = fix1)
+-> git reabse master
+then checkout to master branch and insert below command
+-> git merge branchname(eg. branchname = fix1 and its a fast-forward merge)
+
+
+For get All branch of remote repo
+-> git fetch --all
+-> git branch -a
+
+For find the linking name or remote repo to local repo
+-> git remote
+
+
+For get remote repo summary
+-> git remote show origin(pointer of remote)
+
+
+If ur branch is updated in remote and want to fetch updated code in ur local repo then use below command
+-> git fetch
+-> git merge origin(pointer of remote)/branchname of remote(eg= origin/main)
+
+or did it in one shot using git pull
+
+-> git pull
+
+
+         
+
+pull updation from remote branch to local
+-> git pull origin(remote pointer) branchname(eg. test-remote-1)
+
+
+
+Merge from another of remote to local
+-> git merge origin/test-branch
+
+
+If someone update branch and u also update the branch in local then use below command to fetch
+-> git pull --rebase  (important) 
